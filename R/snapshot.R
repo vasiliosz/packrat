@@ -304,9 +304,9 @@ snapshotImpl <- .snapshotImpl
 
 getBiocRepos <- function() {
 
-  rVersion <- unlist(getRversion())
-  rv <- paste(rVersion[[1]], rVersion[[2]], sep = ".")
-  prefix <- sprintf("http://bioconductor.org/packages/%s", rv)
+  #rVersion <- unlist(getRversion())
+  #rv <- paste(rVersion[[1]], rVersion[[2]], sep = ".")
+  prefix <- sprintf("http://bioconductor.org/packages/%s", "3.1")
 
   c(
     BioCsoft  = file.path(prefix, "bioc"),
